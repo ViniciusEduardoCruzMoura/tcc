@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Adoçao de Animais de Estimaçao</title>
+    <link rel="stylesheet" th:href="@{/bootstrap-5.2.1-dist/css/bootstrap.min.css}">
+    <script th:src="@{/jquery-3.6.1-dist/jquery-3.6.1.min.js}"></script>
+    <script th:src="@{/bootstrap-5.2.1-dist/js/bootstrap.min.js}"></script>
+
+</head>
+<body>
+    <div th:replace="fragments/public-nav :: nav"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2 th:text="${msnBemVindo}"></h2>
+                <!--<a class="btn btn-primary" href="/user/new">Novo usuário</a>-->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
