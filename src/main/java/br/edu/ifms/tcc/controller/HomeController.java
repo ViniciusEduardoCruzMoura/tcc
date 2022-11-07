@@ -9,6 +9,7 @@ public class HomeController {
 
     @RequestMapping("/")
     public String index(Model model) {
+        //carrega a pagina inicial
         model.addAttribute("msnBemVindo", "Bem Vindo ao Sistema de Adoçao de Animais de Estimaçao");
         return "public-index";
     }
